@@ -76,7 +76,7 @@ export function AgendaScreen() {
               
               {/* Text Content */}
               <View className="flex-1">
-                <Typography variant="body" weight="semibold" className="text-text mb-0.5 text-[15px]">
+                <Typography variant="body" weight="bold" className="text-text mb-0.5 text-[15px]">
                   {item.title}
                 </Typography>
                 <Typography variant="caption" className="text-textSecondary text-[13px]">
@@ -115,7 +115,7 @@ export function AgendaScreen() {
             </Typography>
 
             <View className="mb-4">
-              <Typography variant="caption" weight="semibold" className="text-text mb-2 text-[14px]">
+              <Typography variant="caption" weight="bold" className="text-text mb-2 text-[14px]">
                 Título
               </Typography>
               <View className="bg-surface rounded-xl px-4 py-3 border border-primary/5">
@@ -126,7 +126,7 @@ export function AgendaScreen() {
             </View>
 
             <View className="mb-4">
-              <Typography variant="caption" weight="semibold" className="text-text mb-2 text-[14px]">
+              <Typography variant="caption" weight="bold" className="text-text mb-2 text-[14px]">
                 Data e hora
               </Typography>
               <View className="bg-surface rounded-xl px-4 py-3 border border-primary/5 flex-row justify-between items-center">
@@ -138,7 +138,7 @@ export function AgendaScreen() {
             </View>
 
             <View className="mb-6">
-              <Typography variant="caption" weight="semibold" className="text-text mb-2 text-[14px]">
+              <Typography variant="caption" weight="bold" className="text-text mb-2 text-[14px]">
                 Descrição
               </Typography>
               <View className="bg-surface rounded-xl px-4 py-3 border border-primary/5 h-24">
@@ -149,7 +149,7 @@ export function AgendaScreen() {
             </View>
 
             <View className="mb-8">
-              <Typography variant="caption" weight="semibold" className="text-text mb-3 text-[14px]">
+              <Typography variant="caption" weight="bold" className="text-text mb-3 text-[14px]">
                 Tipo
               </Typography>
               <View className="flex-row gap-x-2">

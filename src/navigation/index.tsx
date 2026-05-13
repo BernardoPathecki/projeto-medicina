@@ -26,8 +26,7 @@ export function RootNavigator() {
 
   return (
     <NavigationContainer theme={Theme}>
-      {/* Rota forçada para a Home para você visualizar o design */}
-      <MainTabs />
+      {session ? <MainTabs /> : <AuthStack />}
     </NavigationContainer>
   );
 }

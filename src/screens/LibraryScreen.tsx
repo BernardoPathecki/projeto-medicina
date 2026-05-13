@@ -78,7 +78,7 @@ export function LibraryScreen() {
               
               {/* Text Content */}
               <View className="flex-1">
-                <Typography variant="body" weight="semibold" className="text-text mb-0.5">
+                <Typography variant="body" weight="bold" className="text-text mb-0.5">
                   {item.title}
                 </Typography>
                 <Typography variant="caption" className="text-textSecondary text-[13px]">
