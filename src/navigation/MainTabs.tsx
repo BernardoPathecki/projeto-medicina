@@ -2,6 +2,8 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { HomeScreen } from '@/screens/HomeScreen';
 import { CycleScreen } from '@/screens/CycleScreen';
+import { LibraryStack } from '@/navigation/LibraryStack';
+import { AgendaScreen } from '@/screens/AgendaScreen';
 import { View } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
@@ -50,7 +52,7 @@ export function MainTabs() {
       />
       <Tab.Screen 
         name="Biblioteca" 
-        component={Placeholder} 
+        component={LibraryStack} 
         options={{
           tabBarLabel: 'Biblioteca',
           tabBarIcon: ({ color, size }) => <MaterialCommunityIcons name="book-open-outline" size={24} color={color} />
@@ -58,7 +60,7 @@ export function MainTabs() {
       />
       <Tab.Screen 
         name="Agenda" 
-        component={Placeholder} 
+        component={AgendaScreen} 
         options={{
           tabBarLabel: 'Agenda',
           tabBarIcon: ({ color, size }) => <MaterialCommunityIcons name="bell-outline" size={24} color={color} />
