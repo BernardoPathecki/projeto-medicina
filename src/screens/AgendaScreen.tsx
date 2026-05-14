@@ -40,7 +40,7 @@ export function AgendaScreen() {
   return (
     <SafeAreaView className="flex-1 bg-background" edges={['top']}>
       <ScrollView className="flex-1 px-6 pt-6 pb-6">
-        
+
         {/* Header Section */}
         <View className="flex-row justify-between items-center mb-8">
           <View>
@@ -51,8 +51,8 @@ export function AgendaScreen() {
               Seus lembretes de saúde
             </Typography>
           </View>
-          
-          <TouchableOpacity 
+
+          <TouchableOpacity
             onPress={() => setIsNewModalVisible(true)}
             className="bg-primary w-12 h-12 rounded-2xl items-center justify-center shadow-sm shadow-primary/40"
             activeOpacity={0.8}
@@ -64,8 +64,8 @@ export function AgendaScreen() {
         {/* Reminders List */}
         <View className="gap-y-4 mb-8">
           {reminders.map((item) => (
-            <Pressable 
-              key={item.id} 
+            <Pressable
+              key={item.id}
               className="bg-surface rounded-2xl p-4 flex-row items-center border border-primary/20 shadow-sm active:opacity-70"
               onPress={() => setSelectedReminder(item)}
             >
@@ -73,7 +73,7 @@ export function AgendaScreen() {
               <View className="bg-background rounded-xl w-12 h-12 items-center justify-center mr-4 shadow-sm border border-primary/10">
                 <MaterialCommunityIcons name={item.icon as any} size={24} color="#522C64" />
               </View>
-              
+
               {/* Text Content */}
               <View className="flex-1">
                 <Typography variant="body" weight="semibold" className="text-text mb-0.5 text-[15px]">
@@ -96,7 +96,7 @@ export function AgendaScreen() {
             Manter os exames em dia é fundamental para a prevenção. Adicione lembretes para não perder nenhuma data importante.
           </Typography>
         </View>
-        
+
       </ScrollView>
 
       {/* New Reminder Modal */}
@@ -108,7 +108,7 @@ export function AgendaScreen() {
       >
         <View className="flex-1 bg-black/40 justify-center items-center px-6">
           <Pressable className="absolute inset-0" onPress={() => setIsNewModalVisible(false)} />
-          
+
           <View className="w-full bg-white rounded-[32px] p-6 shadow-xl shadow-black/20">
             <Typography variant="h3" weight="bold" className="text-text mb-6">
               Novo lembrete
@@ -157,13 +157,12 @@ export function AgendaScreen() {
                   <TouchableOpacity
                     key={t}
                     onPress={() => setType(t)}
-                    className={`flex-1 py-3 rounded-xl items-center justify-center ${
-                      type === t ? 'bg-accent shadow-sm shadow-accent/30' : 'bg-surfaceLight border border-primary/5'
-                    }`}
+                    className={`flex-1 py-3 rounded-xl items-center justify-center ${type === t ? 'bg-accent' : 'bg-surfaceLight border border-primary/5'
+                      }`}
                   >
-                    <Typography 
-                      variant="caption" 
-                      weight="bold" 
+                    <Typography
+                      variant="caption"
+                      weight="bold"
                       className={`text-[13px] ${type === t ? 'text-white' : 'text-textSecondary'}`}
                     >
                       {t}
@@ -173,7 +172,7 @@ export function AgendaScreen() {
               </View>
             </View>
 
-            <TouchableOpacity 
+            <TouchableOpacity
               onPress={() => setIsNewModalVisible(false)}
               className="bg-accent rounded-xl py-4 items-center justify-center shadow-md shadow-accent/40"
             >
@@ -194,10 +193,10 @@ export function AgendaScreen() {
               {selectedReminder.title}
             </Typography>
             <View className="mb-6">
-               <Typography variant="caption" weight="bold" className="text-text mb-1">Data e hora</Typography>
-               <Typography variant="body" className="text-textSecondary">{selectedReminder.date}</Typography>
+              <Typography variant="caption" weight="bold" className="text-text mb-1">Data e hora</Typography>
+              <Typography variant="body" className="text-textSecondary">{selectedReminder.date}</Typography>
             </View>
-            <TouchableOpacity 
+            <TouchableOpacity
               className="w-full py-3 rounded-xl border border-primary items-center justify-center"
               onPress={() => setSelectedReminder(null)}
             >

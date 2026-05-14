@@ -8,7 +8,7 @@ export function HomeScreen() {
   return (
     <SafeAreaView className="flex-1 bg-background" edges={['top']}>
       <ScrollView contentContainerStyle={{ padding: 24, paddingBottom: 40 }} showsVerticalScrollIndicator={false}>
-        
+
         {/* Header */}
         <View className="mb-6">
           <Typography variant="h2" weight="bold" className="text-text">Minha Saúde Feminina</Typography>
@@ -22,7 +22,7 @@ export function HomeScreen() {
           <Typography variant="body" className="text-white/90 leading-6">
             Lembre-se: conhecer seu corpo é o primeiro passo para cuidar bem dele.
           </Typography>
-          
+
           <View className="absolute top-6 right-5 w-[42px] h-[42px] bg-white/20 rounded-full items-center justify-center">
             <MaterialCommunityIcons name="heart-outline" size={20} color="#fff" />
           </View>
@@ -32,32 +32,32 @@ export function HomeScreen() {
         <View className="mb-8">
           <Typography variant="h3" weight="bold" className="text-text mb-4">Explorar</Typography>
           <View className="flex-row flex-wrap justify-between gap-y-3">
-            <TouchableOpacity className="bg-surfaceLight rounded-[20px] w-[31%] aspect-square items-center justify-center p-2 px-1">
+            <TouchableOpacity className="bg-surfaceLight rounded-[20px] w-[31%] aspect-square items-center justify-center h-[20px]">
               <MaterialCommunityIcons name="water-outline" size={30} color="#522C64" />
               <Typography variant="caption" className="text-text font-medium mt-2 text-center text-[12px]">Ciclo</Typography>
             </TouchableOpacity>
-            
-            <TouchableOpacity className="bg-surfaceLight rounded-[20px] w-[31%] aspect-square items-center justify-center p-2 px-1">
+
+            <TouchableOpacity className="bg-surfaceLight rounded-[20px] w-[31%] aspect-square items-center justify-center h-[20px]">
               <MaterialCommunityIcons name="pill" size={30} color="#522C64" />
               <Typography variant="caption" className="text-text font-medium mt-2 text-center text-[12px]">Contraceptivos</Typography>
             </TouchableOpacity>
-            
-            <TouchableOpacity className="bg-surfaceLight rounded-[20px] w-[31%] aspect-square items-center justify-center p-2 px-1">
+
+            <TouchableOpacity className="bg-surfaceLight rounded-[20px] w-[31%] aspect-square items-center justify-center h-[20px]">
               <MaterialCommunityIcons name="baby-carriage" size={30} color="#522C64" />
               <Typography variant="caption" className="text-text font-medium mt-2 text-center text-[12px]">Gravidez</Typography>
             </TouchableOpacity>
-            
-            <TouchableOpacity className="bg-surfaceLight rounded-[20px] w-[31%] aspect-square items-center justify-center p-2 px-1">
+
+            <TouchableOpacity className="bg-surfaceLight rounded-[20px] w-[31%] aspect-square items-center justify-center h-[20px]">
               <MaterialCommunityIcons name="stethoscope" size={30} color="#522C64" />
               <Typography variant="caption" className="text-text font-medium mt-2 text-center text-[12px]">Ginecologia</Typography>
             </TouchableOpacity>
-            
-            <TouchableOpacity className="bg-surfaceLight rounded-[20px] w-[31%] aspect-square items-center justify-center p-2 px-1">
+
+            <TouchableOpacity className="bg-surfaceLight rounded-[20px] w-[31%] aspect-square items-center justify-center h-[20px]">
               <MaterialCommunityIcons name="food-apple-outline" size={30} color="#522C64" />
               <Typography variant="caption" className="text-text font-medium mt-2 text-center text-[12px]">Nutrição</Typography>
             </TouchableOpacity>
-            
-            <TouchableOpacity className="bg-surfaceLight rounded-[20px] w-[31%] aspect-square items-center justify-center p-2 px-1">
+
+            <TouchableOpacity className="bg-surfaceLight rounded-[20px] w-[31%] aspect-square items-center justify-center h-[20px]">
               <MaterialCommunityIcons name="emoticon-happy-outline" size={30} color="#522C64" />
               <Typography variant="caption" className="text-text font-medium mt-2 text-center text-[12px]">Bem-estar</Typography>
             </TouchableOpacity>
@@ -67,7 +67,7 @@ export function HomeScreen() {
         {/* Lembretes Section */}
         <View className="mb-4">
           <Typography variant="h3" weight="bold" className="text-text mb-4">Lembretes</Typography>
-          
+
           <TouchableOpacity className="bg-surface rounded-2xl px-5 py-4 mb-3 flex-row items-center border border-primary/5 shadow-sm shadow-black/5">
             <View className="flex-1 mr-2">
               <Typography variant="body" weight="medium" className="text-text text-[15px]">Preventivo (Papanicolau)</Typography>
