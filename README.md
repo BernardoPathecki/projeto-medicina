@@ -44,7 +44,7 @@ O aplicativo busca oferecer informações confiáveis e acessíveis, além de au
 
 O sistema utiliza um banco de dados relacional baseado em PostgreSQL, garantindo organização, integridade e facilidade na consulta das informações.
 
-> Adicionar imagem do MER futuramente.
+![MER](./assets/MER_SaudeFeminina.jpeg)
 
 ---
 
